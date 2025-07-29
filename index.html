@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free Web tutorials">
+    <title>Prime Property | Luxury Property Agency</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.png">
+    <style>
+        :root {
+            --primary-gold: #B8860B;
+            --light-gold: #DAA520;
+            --dark-charcoal: #333333;
+            --very-light-gold: #EBEBE0;
+            --white: #FFFFFF;
+            --text-color: #777777;
+            --lighter-text: #888888;
+        }
+
+        body {
+            font-family: 'Cormorant Garamond', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(to bottom right, var(--very-light-gold), var(--white));
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            text-align: center;
+            background-color: var(--very-light-gold);
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 90%;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at top left, rgba(218, 165, 32, 0.05), transparent 40%),
+                        radial-gradient(circle at bottom right, rgba(218, 165, 32, 0.05), transparent 40%);
+            z-index: 0;
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .logo {
+            margin-bottom: 30px;
+        }
+
+        .logo img {
+            width: 180px;
+            height: auto;
+            filter: drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.1));
+        }
+
+        h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 700;
+            font-style: italic;
+            font-size: 3.5em;
+            color: var(--dark-charcoal);
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05);
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-bottom: 25px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            color: var(--text-color);
+        }
+
+        .button-group {
+            margin-top: 30px;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: var(--primary-gold);
+            color: var(--white);
+            padding: 15px 35px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.1em;
+            font-weight: 600;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            letter-spacing: 0.5px;
+            margin: 10px;
+            border: 1px solid var(--primary-gold);
+        }
+
+        .button:hover {
+            background-color: var(--dark-charcoal);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+            border: 1px solid var(--dark-charcoal);
+        }
+
+        .contact-info {
+            margin-top: 40px;
+            font-size: 0.95em;
+            color: var(--text-color);
+        }
+
+        .contact-info a {
+            color: var(--primary-gold);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .contact-info a:hover {
+            color: var(--dark-charcoal);
+            text-decoration: underline;
+        }
+
+        footer {
+            margin-top: 50px;
+            font-size: 0.85em;
+            color: var(--lighter-text);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .container {
+                padding: 30px;
+            }
+
+            .logo img {
+                width: 150px;
+            }
+
+            .button {
+                padding: 12px 25px;
+                font-size: 1em;
+                margin: 8px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            .button {
+                display: block;
+                margin: 10px auto;
+                max-width: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <main class="content">
+            <div class="logo">
+                <img src="./assets/logo.svg" alt="Prime Property Logo">
+            </div>
+            <h1>Launching Soon</h1>
+            <p>
+                Get ready to discover an unparalleled selection of luxury properties. Our exclusive platform is being meticulously crafted to bring you the finest real estate opportunities.
+            </p>
+            <p>
+                We're putting the finishing touches on an experience designed for discerning buyers and sellers.
+            </p>
+            <div class="button-group">
+                <a href="https://primepropertyagency.co.uk" class="button">Visit Our Agency Site</a>
+            </div>
+            <div class="contact-info">
+                For immediate inquiries, please email us at <a href="mailto:office@primepropertyagency.co.uk">office@primepropertyagency.co.uk</a>
+            </div>
+          </main>
+        <footer>
+            &copy; 2025 Prime Property. All rights reserved.
+        </footer>
+    </div>
+</body>
+</html>
